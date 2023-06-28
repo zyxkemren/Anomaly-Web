@@ -41,15 +41,31 @@ nav ul li a {
   font-family: "Montserrat", sans-serrif;
   padding: 7px 13px;
   border-radius: 3px;
-  font-family: Montserrat;
 }
 
-nav a.active,
-nav a:hover {
-  background: #1b9bff;
-  transition: .5s;
+nav a {
+  position: relative;
 }
 
+nav a::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 5px;
+  background-color: #8bb164;
+  visibility: hidden;
+  transition: width 0.3s ease-in-out;
+  border-radius: 50px;
+}
+
+nav a.active::after,
+nav a:hover::after {
+  width: 50%;
+  visibility: visible;
+}
 .checkbtn {
   font-size: 30px;
   color: white;

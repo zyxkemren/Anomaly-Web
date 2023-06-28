@@ -1,86 +1,74 @@
-.container {
-  display: grid;
-  grid-template-columns: 1fr 2fr 2fr;
-  grid-template-rows: auto auto auto auto;
-  gap: 10px;
+.container {  display: grid;
+  grid-template-columns: 0.5fr 2fr 3.5fr 3.5fr 0.5fr; 
+  grid-template-rows: 0.3fr 3.5fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 80px 0;
+}
+
+.project { 
+  grid-area: 1 / 1 / 4 / 6; 
+  background-color: #24242f;
+  border-radius: 15px;
+  margin: 0 5%;
+}
+
+.desc { 
+  grid-area: 2 / 2 / 3 / 3; 
+}
+
+.bot { 
+  grid-area: 2 / 4 / 3 / 5; 
+  background-color: #2c2c36;
+  border-radius: 15px;
+  margin: 0 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.mc { 
+  grid-area: 2 / 3 / 3 / 4; 
+  background-color: #2c2c36;
+  border-radius: 15px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+p {
+  margin: 10px 5% auto 5%;
+}
+
+.container h2 {
+  margin: 48px 0 0 20px;
+  color: #8bb164;
+}
+
+.desc h2 {
+  margin: 20% 15px 0 40px;
+  color: #8bb164;
+  font-weight: bold;
+}
+
+.desc p {
+  margin: 10px 15px 0 40px;
+}
+
+.hwed {
   font-family: "Montserrat", sans-serif;
-}
-
-.project {
-  grid-area: 1 / 1 / 2 / 2;
-  margin: 80px 0 0 20%;
-  padding: 15px 30px 15px 30px;
-  background-color: #252530;
-  border-radius: 7px;
-}
-
-.project a {
-  color: #05a0c7;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 23px;
-}
-
-.desc {
-  grid-area: 2 / 1 / 25 / 2;
-  margin: 0 0 0 20%;
-  background-color: #252530;
-  color: #dcd9d9;
-  padding: 15px 30px 15px 30px;
-  border-radius: 7px;
-}
-
-.mc {
-  grid-area: 1 / 2 / 25 / 3;
-  margin-top: 80px;
-  background-color: #252530;
-  text-align: center;
-  border-radius: 7px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.mc h2 {
-  margin: 15px 30px;
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.bot {
-  grid-area: 1 / 3 / 25 / 4;
-  margin: 80px 15% 0 0;
-  background-color: #252530;
-  text-align: center;
-  border-radius: 7px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bot h3 {
-  margin: 15px 30px 15px 30px;
-  text-transform: uppercase;
-  text-align: center;
-  font-size: 23px;
-  letter-spacing: 2px;
-}
-
-.container p {
-  text-align: left;
-  margin-top: 20px;
-  margin-left: 5%;
+  font-weight: 100;
+  font-size: 22px;
+  margin: 1px 0 15px 5%;
+  color: #d6d6d6;
 }
 
 .page-button {
   display: block;
-  margin-top: auto;
-  margin-bottom: 50px;
-  background-color: #0881b5;
+  margin: 10px auto 20px 20px;
+  background-color: #8bb164;
   color: #fff;
   border: none;
   border-radius: 50px;
@@ -90,110 +78,11 @@
 }
 
 .page-button:hover {
-  background-color: #055fa0;
+  background-color: #7ca057;;
   text-decoration: none;
+  font-weight: normal;
 }
 
-@media (min-width: 993px) {
-  * {
-    display: none;
-  }
-}
-
-@media (min-width: 689px) {
-  .project {
-    grid-area: 1 / 4;
-    margin: 80px 5% 0 0;
-    padding: 15px 30px;
-    background-color: #252530;
-    border-radius: 7px;
-    text-align: center;
-  }
-
-  .desc {
-    grid-area: 2 / 4;
-    margin: 0 5% 0 0;
-    font-size: 16px;
-  }
-
-  .mc {
-    grid-area: 3 / 4;
-    margin: 0 5% 0 0;
-  }
-
-  .bot {
-    grid-area: 4 / 4;
-    margin: 0 5% 0 0;
-    background-color: #252530;
-    text-align: center;
-    border-radius: 7px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container p {
-    font-size: 13px;
-  }
-
-  .footer {
-    position: absolute;
-    margin: 100% 0 0 0;
-    z-index: 3;
-  }
-
-  .page-button {
-    margin: 7% 0 7% 0;
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 688px) {
-  .project {
-    grid-area: 1 / 4;
-    margin: 80px 5% 0 -5%;
-    padding: 15px 30px;
-    background-color: #252530;
-    border-radius: 7px;
-    text-align: center;
-  }
-
-  .desc {
-    grid-area: 2 / 4;
-    margin: 0 5% 0 -5%;
-    font-size: 16px;
-  }
-
-  .mc {
-    grid-area: 3 / 4;
-    margin: 0 5% 0 -5%;
-  }
-
-  .bot {
-    grid-area: 4 / 4;
-    margin: 0 5% 0 -5%;
-    background-color: #252530;
-    text-align: center;
-    border-radius: 7px;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .container p {
-    font-size: 13px;
-  }
-
-  .footer {
-    position: absolute;
-    margin: 100% 0 0 0;
-    z-index: 3;
-  }
-
-  .page-button {
-    margin: 7% 0 7% 0;
-    font-size: 18px;
-  }
+.footer {
+  margin: 100px 0 0 0;
 }
