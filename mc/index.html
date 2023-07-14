@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Anomaly Network</title>
+    <style>
+      /* Gaya tombol */
+      #demo {
+        padding: 10px 20px;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin: 10px 5%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Anomaly Network</label>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a class="active" href="/project">Project</a></li>
+        <li><a href="/code">Code</a></li>
+      </ul>
+    </nav>
+
+    <div class="header">
+        <h1>Klik Ini Coy</h1>
+        <p id="demo">Click me.</p>
+    </div>
+
+    <div class="container">
+      <div class="clickme">
+      </div>
+    </div>
+    <footer class="footer">
+      <p>
+        &copy; 2023 Anomaly Website. All rights reserved. |
+        <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+      </p>
+    </footer>
+    <script>
+      document.getElementById("demo").addEventListener("click", myFunction);
+      
+      function myFunction() {
+        document.getElementById("demo")
+.innerHTML = "tolol";
+
+  fetch('/send-playerpoints', {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(data)
+  })
+  .then(function(response) {
+    if (response.ok) {
+      console.log('PlayerPoints berhasil dikirim ke Discord bot');
+    } else {
+      console.log('Terjadi kesalahan saat mengirim PlayerPoints');
+    }
+  })
+  .catch(function(error) {
+    console.log('Terjadi kesalahan saat mengirim PlayerPoints:', error);
+  });
+}
+
+document.getElementById("demo")
+
+      </script>
+  </body>
+</html>

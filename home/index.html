@@ -1,74 +1,84 @@
 <!DOCTYPE html>
 <!-- Created By CodingNepal - www.codingnepalweb.com -->
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home - Anomaly Studio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/navbar.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Plus+Jakarta+Sans:wght@500&display=swap");
+    </style>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <title>Home - Anomaly Studio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/navbar.css" />
-  <link rel="stylesheet" href="../css/styles.css" />
-  <link rel="stylesheet" href="../css/home.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Plus+Jakarta+Sans:wght@500&display=swap");
-  </style>
-</head>
+  <body>
+    <nav>
+      <input type="checkbox" id="check" />
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Anomaly</label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/project">Project</a></li>
+        <li><a href="/code">Code</a></li>
+      </ul>
+    </nav>
 
-<body>
-  <nav>
-    <input type="checkbox" id="check" />
-    <label for="check" class="checkbtn">
-      <i class="fas fa-bars"></i>
-    </label>
-    <label class="logo">Anomaly</label>
-    <ul>
-      <li><a class="active" href="#">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/project">Project</a></li>
-      <li><a href="/code">Code</a></li>
-    </ul>
-  </nav>
-
-  <div class="header">
-    <h1>Home</h1>
-    <h2 class="hwed">Anomaly Studio</h2>
-    <p style="width: 90%">
-      Ini adalah Website gajelas yang di buat oleh ZYX, Website ini dibuat
-      karena gabut. Kalian bisa melihat informasi tentang project-project kami
-      disini. Klik logo hamburger/navigasi bar diatas!
-    </p>
-  </div>
-
-  <div class="container">
-    <div class="project"></div>
-    <div class="desc">
-      <h2>Project</h2>
-      <p>Ini adalah project-project yang kami kerjakan.</p></div>
-    <div class="mc">
-      <h2><a href="minecraft://">1. Anomaly Network</a></h2>
-      <p style="width: 90%;">Anomaly Network adalah server Minecraft yang
-        sedang kami kerjakan. Ada beberapa gamemode di server ini, salah satunya
-        adalah Survival dan Parkour.</p>
-        <a href="/anomalynetwork" class="page-button">Learn More</a>
-    </div>
-    
-    <div class="bot">
-      <h2><a href="https://discord.com/api/oauth2/authorize?client_id=1052510780018401371&permissions=8&scope=bot">2. Animek Bot</a></h2>
-      <p>Animek Bot adalah Discord Bot serba guna yang sedang kami kembangkan.
-        Bot ini memiliki banyak sekali fitur/command-command, dari mulai tools
-        sampai permainan ada di bot ini!
+    <div class="header">
+      <h1>Home</h1>
+      <h2 class="hwed">Anomaly Studio</h2>
+      <p style="width: 90%">
+        Ini adalah Website gajelas yang di buat oleh ZYX, Website ini dibuat
+        karena gabut. Kalian bisa melihat informasi tentang project-project kami
+        disini. Klik logo hamburger/navigasi bar diatas!
       </p>
-      <a href="/animekbot" class="page-button">Learn More</a>
     </div>
-  </div>
 
-  <footer class="footer">
-    <p>
-      &copy; 2023 Anomaly Website. All rights reserved. |
-      <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
-    </p>
-  </footer>
-</body>
-
+    <div class="container">
+      <div class="projectsection">
+        <div class="project"></div>
+        <div class="desc">
+          <h2>Project</h2>
+          <p>Ini adalah project-project yang kami kerjakan.</p>
+        </div>
+        <div class="mc">
+          <h2><a href="minecraft://">1. Anomaly Network</a></h2>
+          <p>
+            Anomaly Network adalah server Minecraft yang sedang kami kerjakan.
+            Ada beberapa gamemode di server ini, salah satunya adalah Survival
+            dan Parkour.
+          </p>
+          <a href="/mc" class="page-button">Learn More</a>
+        </div>
+        <div class="bot">
+          <h2>
+            <a
+              href="https://discord.com/api/oauth2/authorize?client_id=1052510780018401371&permissions=8&scope=bot"
+              >2. Animek Bot</a
+            >
+          </h2>
+          <p>
+            Animek Bot adalah Discord Bot serba guna yang sedang kami
+            kembangkan. Bot ini memiliki banyak sekali fitur/command-command,
+            dari mulai tools sampai permainan ada di bot ini!
+          </p>
+          <a href="/animekbot" class="page-button">Learn More</a>
+        </div>
+      </div>
+      <footer class="footer">
+        <p>
+          &copy; 2023 Anomaly Website. All rights reserved. |
+          <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+        </p>
+      </footer>
+    </div>
+  </body>
 </html>
