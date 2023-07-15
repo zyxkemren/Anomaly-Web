@@ -1,29 +1,47 @@
 .header h1 {
-  padding: 0 0 0 10%;
+  font-size: 3.4rem;
+  padding: 60px 50% 0 0;
+  font-family: "Lato", sans-serif;
 }
 
-.started {
-  display: grid;
-  grid-template-columns: repeat(2, 2fr);
-  grid-template-rows: 1.5fr;
-  grid-column-gap: 5px;
-  grid-row-gap: 0px;
-  margin: 2rem 0;
-  padding: 0 15%;
+.header p {
+  margin: 28px 50% 46px 5%;
+  padding: 0;
+  font-size: 0.9rem;
 }
 
-.div1 {
-  grid-area: 1 / 1 / 2 / 2;
-  background-color: red;
+.btn {
+  margin: 0 5%;
 }
 
-.div2 {
-  grid-area: 1 / 2 / 2 / 3;
-  background-color: red;
+.invite {
+  font-size: 0.9rem;
+  margin: 0 20px 0 0;
+  padding: 15px;
+  background-color: #3994ff;
+  cursor: pointer;
+  border-radius: 8px;
+  border-color: #3994ff;
 }
 
-@media (max-width: 767px) {
-  .header {
-    margin: 0 5%;
-  }
+.doc {
+  font-size: 0.9rem;
+  margin: 0 20px 0 0;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.08);
+  cursor: pointer;
+  border-radius: 8px;
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.btn a:hover {
+  text-decoration: none;
+}
+
+.invite:hover {
+  background-color: #1c83f9;
+}
+
+.doc:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
