@@ -1,0 +1,29 @@
+.header h1 {
+  padding: 0 0 0 10%;
+}
+
+.started {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 1.5fr;
+  grid-column-gap: 5px;
+  grid-row-gap: 0px;
+  margin: 2rem 0;
+  padding: 0 15%;
+}
+
+.div1 {
+  grid-area: 1 / 1 / 2 / 2;
+  background-color: red;
+}
+
+.div2 {
+  grid-area: 1 / 2 / 2 / 3;
+  background-color: red;
+}
+
+@media (max-width: 767px) {
+  .header {
+    margin: 0 5%;
+  }
+}
