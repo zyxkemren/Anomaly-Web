@@ -1,4 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Plus+Jakarta+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Plus+Jakarta+Sans:wght@500&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -137,3 +138,51 @@ nav a:hover::after {
   }
 }
 
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header a:hover,
+.container a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 688px) {
+  .footer {
+    padding-bottom: 6%;
+  }
+}
+
+p {
+  color: #dcd9d9;
+}
+
+.container {
+  min-height: 100%;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e29;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+}

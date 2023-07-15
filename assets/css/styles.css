@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Plus+Jakarta+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@500&family=Plus+Jakarta+Sans:wght@500&display=swap");
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -6,7 +11,7 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 p {
@@ -20,7 +25,7 @@ p {
 
 .footer {
   position: absolute;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 12px;
   bottom: 0;
   width: 100%;
@@ -57,7 +62,8 @@ a {
   text-decoration: none;
 }
 
-.header a:hover, .container a:hover {
+.header a:hover,
+.container a:hover {
   text-decoration: underline;
 }
 
