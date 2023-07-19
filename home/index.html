@@ -14,9 +14,9 @@
     <nav>
       <input type="checkbox" id="check" />
       <label for="check" class="checkbtn">
-        <img src="../assets/img/button.svg">
+        <img src="../assets/img/button.svg" />
       </label>
-      <label class="logo">Anomaly Studio</label>
+      <label class="logo">Anomaly</label>
       <ul>
         <li><a class="active" href="/home">Home</a></li>
         <li><a href="/mc">Minecraft</a></li>
@@ -26,52 +26,53 @@
     </nav>
 
     <div class="header">
-      <h1>Home</h1>
-      <h2 class="hwed">Anomaly Studio</h2>
-      <p style="width: 90%">
+      <h1>Anomaly Studio</h1>
+      <p>
         Ini adalah Website gajelas yang di buat oleh ZYX, Website ini dibuat
         karena gabut. Kalian bisa melihat informasi tentang project-project kami
         disini. Klik logo hamburger/navigasi bar diatas!
       </p>
+      <div class="btn">
+        <a href="#webpages">Geser ke Bawah</a>
+      </div>
     </div>
 
     <div class="container">
+      <div class="desc">
+        <h2 id="webpages">Our Project</h2>
+        <p>Ini adalah project-project yang kami kerjakan.</p>
+      </div>
       <div class="projectsection">
-        <div class="project"></div>
-        <div class="desc">
-          <h2>Web Pages</h2>
-          <p>Ini adalah project-project yang kami kerjakan.</p>
-        </div>
         <div class="mc">
-          <h2><a href="minecraft://">1. Anomaly Network</a></h2>
-          <p>
-            Anomaly Network adalah server Minecraft yang sedang kami kerjakan.
-            Ada beberapa gamemode di server ini, salah satunya adalah Survival
-            dan Parkour.
-          </p>
-          <a href="/mc" class="page-button">Learn More</a>
+          <img class="icon" src="../assets/img/minecraft.svg" />
+          <div class="content2">
+            <h2>Anomaly Network</h2>
+            <p>
+              Anomaly Network adalah server Minecraft yang sedang kami kerjakan.
+              Ada beberapa gamemode di server ini, salah satunya adalah Survival
+              dan Parkour.
+            </p>
+          </div>
+          <a href="/mc" class="button">Learn More</a>
         </div>
         <div class="bot">
-          <h2>
-            <a
-              href="https://discord.com/api/oauth2/authorize?client_id=1052510780018401371&permissions=8&scope=bot"
-              >2. Animek Bot</a
-            >
-          </h2>
-          <p>
-            Animek Bot adalah Discord Bot serba guna yang sedang kami
-            kembangkan. Bot ini memiliki banyak sekali fitur/command-command,
-            dari mulai tools sampai permainan ada di bot ini!
-          </p>
-          <a href="/bot" class="page-button">Learn More</a>
+          <img class="icon" src="../assets/img/discord.svg" />
+          <div class="content2">
+            <h2>Animek Bot</h2>
+            <p>
+              Animek Bot adalah Discord Bot serba guna yang sedang kami
+              kembangkan. Bot ini memiliki banyak sekali fitur/command-command,
+              dari mulai tools sampai permainan ada di bot ini!
+            </p>
+          </div>
+          <a href="/bot" class="button">Learn More</a>
         </div>
       </div>
 
       <footer class="footer">
-        <p>
-          &copy; 2023 Anomaly Website. All rights reserved.
-        </p>
+        <p id="cntl">&copy; 2023 Anomaly Website. All rights reserved.</p>
       </footer>
     </div>
+    <script src="../assets/js/smoothscroll.js"></script>
   </body>
 </html>

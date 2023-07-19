@@ -8,21 +8,24 @@
   box-sizing: border-box;
 }
 
-
 nav {
-  background: #31313c;
-  top: 0;
+  background: rgba(49, 49, 60, 0.5);
+  backdrop-filter: blur(2px);
   position: fixed;
+  top: 2%;
+  right: 2%;
+  bottom: 2%;
+  left: 2%;
   height: 80px;
-  width: 100%;
+  border-radius: 15px;
+  border-color: white;
   z-index: 3;
 }
 
 label.logo {
   color: #fff;
   font-size: 35px;
-  font-weight: bold;
-  font-family: "Montserrat", sans-serrif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   line-height: 80px;
   padding: 0 5%;
 }
@@ -83,7 +86,7 @@ nav a:hover::after {
   display: none;
 }
 
-@media(max-width: 999x) {
+@media(max-width: 999px) {
   label.logo {
     font-size: 32px;
     padding: 0 10%;
